@@ -38,9 +38,4 @@ public class HomeController {
         return "redirect:/";
     }
 
-    @RequestMapping("/home")
-    public String showIndex(){
-        return "index";
-    }
-
 }

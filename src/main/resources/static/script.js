@@ -1,3 +1,7 @@
+/*JS by Clément Paris
+* Codepen: https://codepen.io/ClementParis016/pen/azQBgV
+* */
+
 var formAnimator = {
 
     init: function() {
