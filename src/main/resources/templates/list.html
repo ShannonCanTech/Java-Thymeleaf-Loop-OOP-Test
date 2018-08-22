@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Job List</title>
+    <link href='https://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <h1>Jobs</h1>
+
+    <div class="jobs" th:each="job : ${jobs}">
+        <h2 th:inline="text">[[${job.title}]] at [[${job.employer}]]</h2>
+        Description: <p th:text="${job.description}"></p>
+    </div>
+
+    <a href="/add" class="button">Add Job</a>
+</div>
+
+    <script type="application/javascript" src="script.js"></script>
+</body>
+</html>
